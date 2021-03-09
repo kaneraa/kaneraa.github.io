@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaneraa | Shruti Yadav</title>
     <link rel="shortcut icon" href="2-fivicon.png">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="logo.jpg" width="350">
+    <img src="logo.jpg" width="25%">
+    <hr size="2px" color="#000">
+
+    <ul>
+        <li>HOME</li>
+        <li>RÉSUMÉ</li>
+        <li>WORK</li>
+        <li>MUSE</li>
+        <li style="float: right;">GET IN TOUCH</li>
+    </ul>
 </body>
+
 </html>
