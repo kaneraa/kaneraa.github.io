@@ -3,9 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaneraa | Shruti Yadav</title>
+
+    <title>
+        Kaneraa | Shruti Yadav
+    </title>
     <link rel="shortcut icon" href="2-fivicon.png">
 
     <style>
@@ -16,7 +21,7 @@
 
         ul {
             list-style-type: none;
-            margin: 0;
+            margin: 10px;
             padding: 0;
             overflow: hidden;
             background-color: #fff;
@@ -26,6 +31,7 @@
             float: left;
             width: 15%;
             text-align: center;
+            margin: 0px 10px 0px 10px;
         }
 
         li:last-child {
@@ -34,20 +40,28 @@
 
         li a {
             display: block;
-            color: white;
+            color: #000;
             text-align: center;
             text-decoration: none;
         }
 
         li a:hover:not(.active) {
-            background-color: #111;
+            background-color: rgb(145, 224, 18);
+            border-radius: 15px;
         }
 
         .active {
-            background-color: #4CAF50;
+            background-color: #cbd813;
+            border-radius: 15px;
         }
 
         .aboutme {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .footer {
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -64,15 +78,19 @@
     <hr size="1px" color="#000">
 
     <ul>
-        <li>HOME</li>
-        <li>RÉSUMÉ</li>
-        <li>WORK</li>
-        <li>MUSE</li>
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">RÉSUMÉ</a></li>
+        <li><a href="#">WORK</a></li>
+        <li><a href="#">MUSE</a></li>
         <li style="float: right; width: auto;">GET IN TOUCH</li>
     </ul>
 
     <hr size="1px" color="#000">
+    
     <img class="aboutme" src="1.jpg" alt="About Me">
-</body>
 
+    <footer>
+        <img class="footer" src="footer.jpg">
+    </footer>
+</body>
 </html>
