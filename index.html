@@ -57,6 +57,7 @@
             position: fixed;
             top: 0;
             width: 100%;
+            z-index: 1;
         }
 
         .sticky+.content {
@@ -64,16 +65,18 @@
         }
 
 
-        .aboutme {
+        .imgfit {
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
 
-        .footer {
-            height: 100%;
-            width: 100%;
+        .image {
             object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
         }
 
         .footera {
@@ -141,9 +144,39 @@
             background-color: #fff;
         }
 
-        .contact:hover{
+        .contact:hover {
             background: #ccc;
             transition-duration: 0.5s;
+        }
+
+        .abovefooter {
+            color: #888;
+            size: 1px;
+            width: 80%;
+        }
+
+        .container {
+            position: relative;
+            width: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 12.5%;
+            right: 0;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            width: 35%;
+        }
+
+        .imgslide {
+            height: 600px;
         }
     </style>
 
@@ -163,10 +196,17 @@
         <a href="contact.html" style="float: right; text-align: center; width: 15%;">GET IN TOUCH</a>
     </div>
 
-    <img class="aboutme" src="1.jpg" alt="About Me">
+    <img class="imgfit" src="1.jpg" alt="About Me">
 
+    <div class="container">
+        <img src="lbc.jpg" class="image">
+        <div class="overlay">
+            <img src="REVEAL 1_LBC.jpg" class="imgslide">
+        </div>
+    </div>
+
+    <hr class="abovefooter">
     <footer>
-        <img class="footer" src="footer.jpg">
         <img class="footera" src="logo.jpg">
         <button class="contact">GET IN TOUCH</button>
     </footer>
