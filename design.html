@@ -147,6 +147,52 @@
             size: 1px;
             width: 80%;
         }
+
+        .image {
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+        }
+
+        .container {
+            position: relative;
+            width: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 12.5%;
+            right: 0;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            width: 35%;
+        }
+
+        .imgslide {
+            height: 100%;
+        }
+
+        .textslide {
+            color: #000;
+            font-size: 20px;
+            background-color: #0ff;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
     </style>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -164,6 +210,16 @@
         <a href="muse.html">MUSE</a>
         <a href="contact.html" style="float: right; text-align: center; width: 15%;">GET IN TOUCH</a>
     </div>
+
+    <a href="batch2015.html">
+        <div class="container">
+            <img src="batch2015.jpg" class="image" style="margin-top: 20px;">
+            <div class="overlay">
+                <div class="textslide" style="left: 17.5%;">Batch of 2019</div>
+            </div>
+        </div>
+    </a>
+
     <hr class="abovefooter">
     <footer>
         <img class="footera" src="logo.jpg">
