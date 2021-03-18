@@ -17,15 +17,17 @@
 </head>
 
 <body>
-    <a href="index.html"><img src="logo.jpg" width="25%"></a>
+    <!--<a href="index.html" style="width: 20%; margin-right: 5px;"><img src="logo.jpg" width="25%"></a>-->
 
-    <div id="navbar">
-        <a class="active" href="index.html" style="margin-left: 0px;">HOME</a>
-        <a href="resume.html">RÉSUMÉ</a>
-        <a href="design.html">DESIGN</a>
-        <a href="arch.html">ARCHITECTURE</a>
-        <a href="muse.html">MUSE</a>
-        <a href="contact.html" style="float: right; text-align: center; width: 15%;">GET IN TOUCH</a>
+    <div id="navbar" class="sticky">
+        <a href="index.html" style="background-color: #fff;"><img src="logo.jpg" width="250%"
+                style="margin-top: -13px;"></a>
+        <a href="contact.html" style="text-align: center; float: right; margin-right: 5px;">GET IN TOUCH</a>
+        <a href="muse.html" style="float: right;">MUSE</a>
+        <a href="arch.html" style="float: right;">ARCHITECTURE</a>
+        <a href="design.html" style="float: right;">DESIGN</a>
+        <a href="resume.html" style="float: right;">RÉSUMÉ</a>
+        <a class="active" href="index.html" style="margin-left: 0px; float: right;">HOME</a>
     </div>
 
     <img class="imgfit" src="1.jpg" alt="About Me">
@@ -56,21 +58,6 @@
     </footer>
 
     <button id="myBtn"><a href="#top">Top</a></button>
-
-    <script>
-        window.onscroll = function () { myFunction() };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
 </body>
 
 </html>
