@@ -18,14 +18,14 @@
 </head>
 
 <body>
-    <div id="navbar">
+    <div id="navbar" class="sticky">
         <a href="index.html" style="background-color: #fff;"><img src="logo.jpg" width="250%" style="margin-top: -13px;"></a>
         <a href="contact.html" style="text-align: center; float: right; margin-right: 5px;">GET IN TOUCH</a>
         <a href="muse.html" style="float: right;">MUSE</a>
         <a href="arch.html" style="float: right;">ARCHITECTURE</a>
-        <a href="design.html" style="float: right;">DESIGN</a>
+        <a class="active" href="design.html" style="float: right;">DESIGN</a>
         <a href="resume.html" style="float: right;">RÉSUMÉ</a>
-        <a class="active" href="index.html" style="margin-left: 0px; float: right;">HOME</a>
+        <a href="index.html" style="margin-left: 0px; float: right;">HOME</a>
     </div>
 
     <h1 class="textcenter">BATCH OF 2015-2020</h1>
@@ -42,23 +42,6 @@
     </footer>
 
     <button id="myBtn"><a href="#top">Top</a></button>
-
-    <script>
-
-        window.onscroll = function () { myFunction() };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-
-    </script>
 </body>
 
 </html>
