@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>
+        Kaneraa | Shruti Yadav
+    </title>
+    <link rel="shortcut icon" href="2-fivicon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <div id="navbar" class="sticky">
+        <a href="index.html" style="background-color: #fff;"><img src="logo.jpg" width="250%" style="margin-top: -13px;"></a>
+        <a href="contact.html" style="text-align: center; float: right; margin-right: 5px;">GET IN TOUCH</a>
+        <a href="muse.html" style="float: right;">MUSE</a>
+        <a href="arch.html" style="float: right;">ARCHITECTURE</a>
+        <a class="active" href="design.html" style="float: right;">DESIGN</a>
+        <a href="resume.html" style="float: right;">RÉSUMÉ</a>
+        <a href="index.html" style="margin-left: 0px; float: right;">HOME</a>
+    </div>
+
+    <img src="kathak_1.jpg" class="myImg">
+
+    <img src="kathak_2.jpg" class="myImg">
+
+    <img src="kathak_3.jpg" class="myImg">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = $('.myImg');
+        var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+        $('.myImg').click(function () {
+            modal.style.display = "block";
+            var newSrc = this.src;
+            modalImg.attr('src', newSrc);
+            captionText.innerHTML = this.alt;
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+    </script>
+
+    <hr class="abovefooter">
+    <footer>
+        <footer>
+            <img class="footera" src="logo.jpg">
+            <a href="contact.html"><button class="contact">GET IN TOUCH</button></a>
+            <table align="center" style="margin-top: 10px;" cellspacing="10px">
+                <tr>
+                    <td style="height: 20px; width: 20px;"><a href="https://www.instagram.com/kaneraaaa/"><img
+                                src="ig.png" style="width: 30px; height: 30px; opacity: 0.7;"></a></td>
+                    <td style="height: 20px; width: 20px;"><a href="mailto:shruti.yadav1105@gmail.com"><img src="em.png"
+                                style="width: 40px; height: 40px; opacity: 0.7;"></a></td>
+                    <td style="height: 20px; width: 20px;"><a href="https://www.behance.net/shrutiyadav2"><img
+                                src="be.png" style="width: 30px; height: 30px; opacity: 0.7;"></a></td>
+                </tr>
+            </table>
+            <p class="textcenter" style="font-size: 10px;">Designed by Shruti Yadav in 2021</p>
+        </footer>
+
+        <button id="myBtn"><a href="#top">Top</a></button>
+</body>
+
+</html>
