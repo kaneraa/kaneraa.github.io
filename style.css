@@ -268,3 +268,9 @@ a:visited {
   margin-top: 20px;
    width: 100%;
 }
+
+.totop {
+  text-decoration: none;
+  font-family: poppins;
+  text-transform: capitalize;
+}
