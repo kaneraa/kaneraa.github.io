@@ -23,7 +23,8 @@
   margin-bottom: 5px;
   border-radius: 2px;
   display: block;
-  width: 8.34%;
+  width: 11%;
+  white-space: nowrap;
 }
 
 #navbar a:hover {
