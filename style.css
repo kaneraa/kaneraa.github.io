@@ -62,6 +62,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border: none;
 }
 
 .image {
@@ -274,4 +275,20 @@ a:visited {
   text-decoration: none;
   font-family: poppins;
   text-transform: capitalize;
+}
+
+
+.vid-border{
+  position: relative;
+  height: 1146.6px;
+  width: 83vw;
+  border: 10px solid white;
+  overflow: hidden;
+}
+#vid {
+  position: absolute;
+  top:-5px;
+  left:-5px; 
+  height: 1146.6px;
+  width: 84vw;
 }
