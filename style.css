@@ -268,7 +268,8 @@ a:visited {
 .myVid{
   transition: 0.3s;
   margin-top: 20px;
-   width: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .totop {
@@ -277,18 +278,18 @@ a:visited {
   text-transform: capitalize;
 }
 
-
 .vid-border{
   position: relative;
-  height: 1146.6px;
+  height: 83vh;
   width: 83vw;
-  border: 10px solid white;
+  border: 30px solid white;
   overflow: hidden;
 }
+
 #vid {
   position: absolute;
-  top:-5px;
-  left:-5px; 
-  height: 1146.6px;
+  top: -5px;
+  left: -5px;
+  height: 83vh;
   width: 84vw;
 }
