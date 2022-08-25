@@ -12,12 +12,13 @@
     <link rel="shortcut icon" href="2-fivicon.png">
 
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--<a href="index.html" style="width: 20%; margin-right: 5px;"><img src="logo.jpg" width="25%"></a>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <div id="navbar" class="sticky">
         <a href="index.html" style="background-color: #fff;"><img src="logo.jpg" width=150%"
@@ -25,70 +26,61 @@
         <a href="contact.html" style="text-align: center; float: right; margin-right: 5px; width: 8%;">GET IN TOUCH</a>
         <a href="muse.html" style="float: right; width: 6%;">MUSE</a>
         <a href="arch.html" style="float: right; width: 8%;">ARCHITECTURE</a>
-        <a href="interaction.html" style="float: right;">INTERACTION DESIGN</a>
+        <a class="active" href="interaction.html" style="float: right;">INTERACTION DESIGN</a>
         <a href="communication.html" style="float: right; width: 12%;">COMMUNICATION DESIGN</a>
         <a href="resume.html" style="float: right; width: 7%;">RÉSUMÉ</a>
-        <a class="active" href="index.html" style="margin-left: 0px; float: right; width: 6%;">HOME</a>
+        <a href="index.html" style="margin-left: 0px; float: right; width: 6%;">HOME</a>
     </div>
 
-    <div class="vid-border">
-        <video id="vid" loop autoplay autobuffer muted>
-            <source type="video/mp4" src="1.mp4">
-            </source>
-        </video>
+    <img src="byjus.png" class="myImg">
+
+    <img src="byjus1.png" class="myImg">
+
+    <img src="byjus2.png" class="myImg">
+
+    <img src="byjus3.png" class="myImg">
+
+    <img src="byjus4.png" class="myImg">
+
+    <img src="" class="myImg">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
     </div>
-    
-    <img src="2.jpg" class="image" style="margin-top: -50px; transform: translateX(3.4vw);">
 
-    <a href="byjus.html">
-        <img src="byjus.png" class="image" style="margin-top: 100px;">
-    </a>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
 
-    <a href="phera.html">
-        <img src="phera1.png" class="image" style="margin-top:20px;">
-    </a>
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = $('.myImg');
+        var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+        $('.myImg').click(function () {
+            modal.style.display = "block";
+            var newSrc = this.src;
+            modalImg.attr('src', newSrc);
+            captionText.innerHTML = this.alt;
+        });
 
-    <a href="gond.html">
-        <img src="gond_cover.jpg" class="image" style="margin-top: 20px;">
-    </a>
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
-    <a href="augmented.html">
-        <img src="augmented1.png" class="image" style="margin-top: 20px;">
-    </a>
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
 
-    <a href="recharka.html">
-        <img src="RC1.png" class="image" style="margin-top: 20px;">
-    </a>
-
-    <a href="brand-story.html">
-        <img src="kanera_cover.jpg" class="image" style="margin-top: 20px;">
-    </a>
-
-    <a href="blur.html">
-        <video autoplay loop class="myVid">
-            <source src="blur_cover.mp4" type="video/mp4">
-        </video>
-    </a>
-
-    <a href="calligraphy.html">
-        <img src="call_cover.jpg" class="image" style="margin-top: 20px;">
-    </a>
-
-    <a href="kathak.html">
-        <img src="kathak_cover.jpg" class="image" style="margin-top: 20px;">
-    </a>
-
-    <a href="batch2015.html">
-        <img src="batch2015.jpg" class="image" style="margin-top: 20px;">
-    </a>
-
-    <a href="thesis.html">
-        <img src="thesis_cover.jpg" class="image" style="margin-top: 20px;">
-    </a>
-
-    <a href="lbc.html">
-        <img src="lbc_cover.jpg" class="image" style="margin-top: 20px;">
-    </a>
+    </script>
 
     <hr class="abovefooter">
     <footer>
@@ -107,7 +99,7 @@
         <p class="textcenter" style="font-size: 10px;">Designed by Shruti Yadav in 2022</p>
     </footer>
 
-    <button id="myBtn"><a href="#top" class="totop">Top</a></button>
+        <button id="myBtn"><a href="#top" class="totop">Top</a></button>
 </body>
 
 </html>
