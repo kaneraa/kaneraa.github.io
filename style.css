@@ -173,7 +173,7 @@ a:visited {
 .myImg1 {
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 20px;
+  margin-top: -10px;
   margin-left: 7%;
   margin-right: 7%;
    width: 86%;
