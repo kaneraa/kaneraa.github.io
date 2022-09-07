@@ -169,6 +169,16 @@ a:visited {
    width: 100%;
 }
 
+/* Style the Image Used to Trigger the Modal */
+.myImg1 {
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+  margin-left: 7%;
+  margin-right: 7%;
+   width: 86%;
+}
+
 .myImg:hover {
   opacity: 0.7;
 }
